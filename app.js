@@ -118,6 +118,13 @@ const mouseConstraint = MouseConstraint.create(engine, {
 //add mouse constraint to world
 World.add(world, mouseConstraint);
 
+const canva = document.querySelector("canvas");
+
+// Add an event listener to the canvas to detect when the user scrolls
+canva.addEventListener("wheel", (event) => {
+  event.stopPropagation();
+});
+
 //slomo
 engine.timing.timeScale = 0.8;
 

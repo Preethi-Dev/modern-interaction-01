@@ -72,7 +72,7 @@ function generateBodies() {
     "./images/shallowCopy.svg",
   ];
   const total = bodies.length;
-  const random = Math.floor(Math.random() * total) + 1;
+  const random = Math.floor(Math.random() * total);
   return bodies[random];
 }
 
